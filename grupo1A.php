@@ -23,11 +23,11 @@
 
     <nav>
         <ul id="lista">
-            <li><a href="index.html">INICIO</a></li>
+            <li><a href="index.php">INICIO</a></li>
             <li id="select">AUTORIZACIÓN</li>
-            <li><a href="control.html">CONTROL</a></li>
-            <li><a href="informacion.html">INFORMACIÓN</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="control.php">CONTROL</a></li>
+            <li><a href="informacion.php">INFORMACIÓN</a></li>
+            <li><a href="contacto.php">CONTACTO</a></li>
         </ul>
     </nav>
         
@@ -67,7 +67,7 @@
     
     </div>
 
-    <a href="index.html">
+    <a href="index.php">
         <div>
             <img src="img/flamenco.svg" id="flamenco" alt="volver">
         </div>
