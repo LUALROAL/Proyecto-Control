@@ -34,7 +34,7 @@
 
         <section class="container">
             <div class="container2">
-                <a href="Estudiantes.php?OrderBy=Grupo"><input type="submit" value="GRUPOS"></a>
+                <a href="gruposAlumnos.php?OrderBy=Grupo"><input type="submit" value="GRUPOS"></a>
 
                 <a href="Estudiantes.php?OrderBy=Alfabetico"><input type="submit" value="ORDEN ALFABÉTICO"></a>
 
