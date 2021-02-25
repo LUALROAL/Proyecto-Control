@@ -1,32 +1,14 @@
 
 <?php
-define("APP_PATH", $_SERVER["DOCUMENT_ROOT"] . "/control/");
-require_once APP_PATH . 'Config.php';
 
-//define('APP_PATH', ROOT . DS);
-//require_once APP_PATH.'Config.php';
-// We need to use sessions, so you should always start sessions using the below code.
-// If the user is not logged in redirect to the login page...
 
 
 if (session_id() === '' ? FALSE : TRUE) {
-    header('Location:' . APP_PATH . 'index.php');
+    header('Location:' . APP_PATH . 'index.html');
     exit;
 }
 session_start();
-$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-if (mysqli_connect_errno()) {
-    exit('Failed to connect to MySQL: ' . mysqli_connect_error());
-}
-// We don't have the password or email info stored in sessions so instead we can get the results from the database.
-$stmt = $conn->prepare('SELECT usuario,password FROM login WHERE usuario = ?');
 
-// In this case we can use the account ID to get the account info.
-$stmt->bind_param('s', $_SESSION['id']);
-$stmt->execute();
-$stmt->bind_result($usuario, $password);
-$stmt->fetch();
-$stmt->close();
 
 ?>
 
@@ -56,7 +38,7 @@ $stmt->close();
 		</nav>
             <nav class="encabezado">
                 <ul class="lista">
-                    <li><a href="index.php" class="select">INICIO</a></li>
+                    <li><a href="index.html" class="select">INICIO</a></li>
                     <li><a href="autorizacion.php">AUTORIZACIÓN</a></li>
                     <li><a href="control.php">CONTROL</a></li>
                     <li><a href="informacion.php">INFORMACIÓN</a></li>

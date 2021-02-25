@@ -22,7 +22,7 @@
             <h1 class="titulo">Control Alumnado</h1>
             <nav class="encabezado">
                 <ul class="lista">
-                    <li><a href="index.php">INICIO</a></li>
+                    <li><a href="inicio.php">INICIO</a></li>
                     <li><a href="autorizacion.php">AUTORIZACIÓN</a></li>
                     <li><a href="control.php">CONTROL</a></li>
                     <li><a href="informacion.php" class="select">INFORMACIÓN</a></li>
@@ -47,7 +47,7 @@
 
 
                 <div class="volver">
-                    <a href="index.php"><img src="img/flamenco.svg" id="logoautorizacion" alt="volver"></a>
+                    <a href="index.html"><img src="img/flamenco.svg" id="logoautorizacion" alt="volver"></a>
                 </div>
             </div>
         </section>

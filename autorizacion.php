@@ -22,7 +22,7 @@
             <h1 class="titulo">Control Alumnado</h1>
             <nav class="encabezado">
                 <ul class="lista">
-                    <li><a href="index.php">INICIO</a></li>
+                    <li><a href="inicio.php">INICIO</a></li>
                     <li><a href="autorizacion.php" class="select">AUTORIZACIÓN</a></li>
                     <li><a href="control.php">CONTROL</a></li>
                     <li><a href="informacion.php">INFORMACIÓN</a></li>
@@ -34,9 +34,9 @@
 
         <section class="container">
             <div class="container2">
-                <a href="autorizacion.php"><input type="submit" value="GRUPOS"></a>
+                <a href="Estudiantes.php?OrderBy=Grupo"><input type="submit" value="GRUPOS"></a>
 
-                <a href="ordenalfabetico.php"><input type="submit" value="ORDEN ALFABÉTICO"></a>
+                <a href="Estudiantes.php?OrderBy=Alfabetico"><input type="submit" value="ORDEN ALFABÉTICO"></a>
 
                 <div style="text-align:center;padding:1em 0;">
                     <h4><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/es/city/3117735"><span
@@ -46,7 +46,7 @@
                 </div>
 
                 <div class="volver">
-                    <a href="index.php"><img src="img/flamenco.svg" id="logoautorizacion" alt="volver"></a>
+                    <a href="index.html"><img src="img/flamenco.svg" id="logoautorizacion" alt="volver"></a>
                 </div>
                 
             </div>
