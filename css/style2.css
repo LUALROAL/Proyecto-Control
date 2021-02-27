@@ -1,0 +1,157 @@
+*{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body{
+    margin: 0px;
+    font-size:20px;
+}
+
+
+
+.body_Index{
+    background-image: url("../img/paisaje.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.circulo{
+    padding: 5px;
+    border-radius: 50%;
+    border: 10px solid gainsboro;
+    background-color: gainsboro;
+    width: 100px;
+    margin:0 auto;
+}
+
+.contenedor10{
+    display: block;
+    margin:100px auto;
+    margin-bottom: 0px;
+}
+
+.contenedor00{
+    height: 80px;
+}
+
+.contenedor20{
+    height: 170px;
+    width: 400px;
+    margin:0 auto;
+    background-color: gainsboro;
+    border-radius: 50px;
+    display: block;
+}
+
+.formulario{
+    margin:15px auto;
+}
+
+.formulario input{
+    display: block;
+    margin:  auto;
+    height: 20px;
+}
+
+.formulario label{
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+}
+
+
+
+
+
+
+@media (max-width:800px){
+
+    body{
+        margin: 0px;
+        font-size:12px;;
+    }
+
+    main{
+        padding: 5px 5px;
+    }
+
+    header h1{
+        text-align: center;
+        font-size: 28px;
+    }
+    
+    .portada{
+        background-color: rgba(198, 165, 228,0.3);
+    }
+
+    .portada p{
+        text-align: justify;
+        margin-left: 5px;
+        margin-right: 15px;
+    }
+
+    .portada p img{
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 12px;
+    }
+    
+
+
+    .titulo h1{
+        color:rgb(46, 119, 139);
+        text-shadow: 10px 15px rgb(198, 165, 228) ;
+        font-size:30px;
+    }
+
+#comentario{
+    background-color:rgba(46, 119, 139,0.3) ;
+    padding: 5px 15px;
+}
+
+.siguiente{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.centrado p{
+    padding: 5px;
+}
+
+.contenedor20{
+    height: 170px;
+    width: 200px;
+    margin:0 auto;
+    background-color: gainsboro;
+    border-radius: 50px;
+    display: block;
+
+}
+.body_Index{
+    background-image: url("../img/paisaje.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+
+}
+
+.formulario .boton{
+    margin-top: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    height: 30px;
+    color: #A32172;
+}
+
+
+
+
+
+
+
