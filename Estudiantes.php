@@ -7,8 +7,24 @@ if (session_id() === '' ? false : true) {
     exit;
 }
 session_start();
-$tipoOrden = $_GET["OrderBy"];
-$estudiantes = get_estudiantes();
+$tipoOrden = "";
+if (isset($_GET["OrderBy"])) {
+    $tipoOrden = $_GET["OrderBy"];
+
+} else {
+
+    die("Error No hay parametro: ");
+}
+
+if (isset($_GET["filter"])) {
+    $filter = $_GET["filter"];
+
+} else {
+
+    $filter = "";
+}
+
+$estudiantes = get_estudiantes($tipoOrden, $filter);
 
 ?>
 
@@ -37,21 +53,45 @@ $estudiantes = get_estudiantes();
                         <h1 class="titulo">Control Alumnado</h1>
                         <nav class="encabezado">
                                 <ul class="lista">
-                                        <li><a href="index.html">INICIO</a></li>
-                                        <li><a href="autorizacion.html" class="select">AUTORIZACIÓN</a></li>
-                                        <li><a href="control.html">CONTROL</a></li>
-                                        <li><a href="informacion.html">INFORMACIÓN</a></li>
-                                        <li><a href="contacto.html">CONTACTO</a></li>
+                                        <li><a href="Inicio.php">INICIO</a></li>
+                                        <li><a href="autorizacion.php" class="select">AUTORIZACIÓN</a></li>
+                                        <li><a href="control.php">CONTROL</a></li>
+                                        <!-- <li><a href="informacion.html">INFORMACIÓN</a></li>
+                                        <li><a href="contacto.html">CONTACTO</a></li> -->
                                 </ul>
                         </nav>
                 </header>
 
 
                 <div class="espaciado"></div>
+<div class="contenedor_filtro" >
+
+    <?php
+if ($tipoOrden == 'Alfabetico') {
+    echo "<h2>Autorización por orden Alfabetico</h2><br>";
+
+} else {
+    echo "<h2>Autorización por Grupo</h2>";
+}
+
+?>
+
+
+
+
+<form class='example' action='estudiantes.php'>
+    <input type='text'  name='OrderBy' value='<?php echo $tipoOrden; ?>' hidden>
+    <input type='text' placeholder='Buscar..' name='filter'>
+    <button type='submit'>Buscar<i class='fa fa-search'></i></button>
+</form>
+
+</div>
+
+
                 <div class="contenedor_Listado1">
 
 
-<?php
+                <?php
 if ($tipoOrden == 'Alfabetico') {
 
     for ($x = 65; $x <= 90; $x++) {
@@ -59,7 +99,7 @@ if ($tipoOrden == 'Alfabetico') {
         echo "<div>";
         foreach ($estudiantes as $i) {
             if (substr(strtoupper($i->Nombre), 0, 1) == chr($x)) {
-                echo "<a href=''><li>" . $i->Nombre . "_" . $i->Grupo . "</li></a>";
+                echo "<a href='SeleccionEstudiante.php?ID=$i->id'><li>" . $i->Nombre . "_" . $i->Grupo . "</li></a>";
             }
         }
         echo "</div><br><br>";
@@ -72,7 +112,7 @@ if ($tipoOrden == 'Alfabetico') {
         echo "<div>";
         foreach ($estudiantes as $i) {
             if ($i->Grupo == $g) {
-                echo "<a href=''><li>" . $i->Nombre . "_" . $i->Grupo . "</li></a>";
+                echo "<a href='SeleccionEstudiante.php?ID=$i->id'><li>" . $i->Nombre . "_" . $i->Grupo . "</li></a>";
             }
         }
         echo "</div><br><br>";

@@ -1,10 +1,10 @@
-*{
-    margin:0 ;
+* {
+    margin: 0;
     padding: 0;
 }
 
 /* BODY */
-body{
+body {
     background-image: url(../img/fondo.png);
     font-family: roboto;
     background-size: cover;
@@ -14,11 +14,11 @@ body{
 
 /* HEADER */
 
-header{
+header {
     text-align: center;
     font-size: 20px;
-    color:rgb(167,7,75);
-    background-color:rgba(236,155,164,0.5);
+    color: rgb(167, 7, 75);
+    background-color: rgba(236, 155, 164, 0.5);
     position: absolute;
     margin: 0px 10px;
     width: 98%;
@@ -27,58 +27,60 @@ header{
 }
 
 /* NAV */
-.encabezado{
+.encabezado {
     width: 100%;
-    background-color:rgb(161,70,126);
+    background-color: rgb(161, 70, 126);
     height: auto;
     display: block;
     margin-top: 50px;
 }
 
 
-.lista{
-    display:inline;
-    width: 80%;   
-    margin:0 auto;
+.lista {
+    display: inline;
+    width: 80%;
+    margin: 0 auto;
     padding: 10px;
 }
 
 a {
-    color:silver; 
-    font-family: roboto; 
+    color: silver;
+    font-family: roboto;
     text-decoration: none;
 }
+
 a:hover {
-    color: rgb(248, 234, 107); 
+    color: rgb(248, 234, 107);
     text-decoration: none;
 }
-.lista a:hover{
+
+.lista a:hover {
     font-family: arial
 }
 
-.lista li{
+.lista li {
     list-style: none;
-    display:inline-block;
+    display: inline-block;
     margin: 0 auto;
     text-align: center;
     font-size: 22px;
-    width:220px;
-    color:rgb(222,218,222);
+    width: 220px;
+    color: rgb(222, 218, 222);
 }
 
 
-.lista li .select{
-    color:rgb(248, 234, 107);
+.lista li .select {
+    color: rgb(248, 234, 107);
 }
 
 /* INDEX */
-.container{
+.container {
     width: 320px;
     height: 490px;
     top: 75%;
     left: 50%;
-    background-color: rgb(247,209,213,0.7);
-    margin:40px auto;
+    background-color: rgb(247, 209, 213, 0.7);
+    margin: 40px auto;
     border-radius: 10px;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -89,11 +91,11 @@ a:hover {
 
 }
 
-.container input[type="submit"]{
+.container input[type="submit"] {
     border: none;
     outline: none;
     height: 55px;
-    background:  rgb(191,129,158);
+    background: rgb(191, 129, 158);
     color: #fff;
     font-size: 19px;
     border-radius: 20px;
@@ -122,7 +124,7 @@ a:hover {
 
 .container input[type="submit"]:hover {
     color: rgb(248, 234, 107);
-    background-color:rgb(161,70,126);
+    background-color: rgb(161, 70, 126);
     cursor: pointer;
 }
 
@@ -153,18 +155,19 @@ a:hover {
 
 /* CONTROL */
 
-.volver{
+.volver {
     /* padding: 100px; */
 }
 
-.volver #logoautorizacion{
-    display:block;
-    margin:0 auto;
+.volver #logoautorizacion {
+    display: block;
+    margin: 0 auto;
     width: 20%;
 }
-.volver #logocontrol{
-    display:block;
-    margin:0 auto;
+
+.volver #logocontrol {
+    display: block;
+    margin: 0 auto;
     width: 40px;
 }
 
@@ -183,9 +186,9 @@ a:hover {
     padding: 70px 30px;
     text-align: center;
 } */
-.contenedor_de_carta{
-height: 300px;
-width: 160px;
+.contenedor_de_carta {
+    height: 300px;
+    width: 160px;
 }
 
 /* .container_Cartas{
@@ -198,21 +201,21 @@ width: 160px;
     background: blue;
   } */
 
-.grid{
+.grid {
     display: flex;
     justify-content: space-around;
     height: auto;
     margin: auto;
     position: relative;
-    top: 60%;
+   
 }
 
-.center{
+.center {
     position: relative;
-    top: 60%;
+   
 }
 
-  .container_Cartas .carta{
+.container_Cartas .carta {
     width: 180px;
     height: 320px;
     border-radius: 8px;
@@ -223,52 +226,52 @@ width: 160px;
     transition: all 0.25s;
     position: relative;
     top: 14px;
-    background: rgb(191,129,158,0.2);
-  }
+    background: rgb(191, 129, 158, 0.2);
+}
 
-  .container_Cartas .carta:hover{
+.container_Cartas .carta:hover {
     transform: translateY(-15px);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-  }
-  
-  .container_Cartas .carta img {
+}
+
+.container_Cartas .carta img {
     width: 150px;
     height: 150px;
     margin: 8px;
-  }
-  
-  .container_Cartas .carta .nombre_1{
-      font-size: 18px;
-      background:  rgb(191,129,158);
-      color: #fff;
-      margin: 5px;
-  }
+}
 
-  .container_Cartas .carta .hora_1{
-      background: rgb(191,129,158);
-      margin: 5px;
-      padding: 0px 5px;
-      font-size: 15px;
-    }
+.container_Cartas .carta .nombre_1 {
+    font-size: 18px;
+    background: rgb(191, 129, 158);
+    color: #fff;
+    margin: 5px;
+}
 
-.container_Cartas .carta .hora_2{
-    background:rgb(30,106,57);
+.container_Cartas .carta .hora_1 {
+    background: rgb(191, 129, 158);
+    margin: 5px;
+    padding: 0px 5px;
+    font-size: 15px;
+}
+
+.container_Cartas .carta .hora_2 {
+    background: rgb(30, 106, 57);
     color: #fff;
     margin: 5px;
     padding: 0px 5px;
     font-size: 15px;
 }
 
-.container_Cartas .carta .profesor_N{
-    background:rgb(161,70,126);
+.container_Cartas .carta .profesor_N {
+    background: rgb(161, 70, 126);
     color: #fff;
     margin: 5px;
     padding: 0px 5px;
     font-size: 15px;
 }
 
-.container_Cartas .carta .incidencia_1{
+.container_Cartas .carta .incidencia_1 {
     background: #000;
     color: #fff;
     margin: 5px;
@@ -277,21 +280,21 @@ width: 160px;
 }
 
 
-  .container_Cartas .carta p{
+.container_Cartas .carta p {
     padding: 0 1rem;
     font-size: 12px;
     font-weight: bold;
     border-radius: 5px;
-  }
-  
-  
-  .container_Cartas .carta a {
+}
+
+
+.container_Cartas .carta a {
     font-weight: 100;
     text-decoration: none;
     color: #3498db;
-  }
-  
-  
+}
+
+
 
 /* .control_img {
     display: grid;
@@ -491,10 +494,10 @@ width: 160px;
 
 /* CONTACTO */
 
-form{
+.formLogin {
     width: 265 px;
     margin: auto;
-    background: rgba(161,70,126, 0.4);
+    background: rgba(161, 70, 126, 0.4);
     padding: 5px 10px;
     box-sizing: border-box;
     border-radius: 7px;
@@ -502,15 +505,16 @@ form{
     bottom: 60px;
 }
 
-.titulo_Contacto{
-    color:#fff;
+.titulo_Contacto {
+    color: #fff;
     text-align: center;
     margin: 0;
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-.input_contacto, textarea{
+.input_contacto,
+textarea {
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
@@ -519,30 +523,30 @@ form{
     border: none;
 }
 
-textarea{
+textarea {
     min-height: 100px;
     max-height: 200px;
     max-width: 100%;
 }
 
-#boton{
-    background: rgb(191,129,158);
+#boton {
+    background: rgb(191, 129, 158);
     color: #fff;
     padding: 10px;
     font-weight: bold;
     border-radius: 10px;
 }
 
-#boton:hover{
+#boton:hover {
     color: rgb(248, 234, 107);
-    background-color:rgb(161,70,126);
+    background-color: rgb(161, 70, 126);
     cursor: pointer;
 }
 
 /* LITADO ALFABETICO */
 
-.abcd{
-    background-color:rgb(161,70,126, 0.4);
+.abcd {
+    background-color: rgb(161, 70, 126, 0.4);
     margin: auto 10px;
     position: relative;
     top: 28%;
@@ -552,33 +556,33 @@ textarea{
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }
 
-.abcd:hover{
-    background-color: rgb(161,70,126);
+.abcd:hover {
+    background-color: rgb(161, 70, 126);
     padding: 20px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.abcd .Lista_abcd li{
+.abcd .Lista_abcd li {
     display: inline;
     margin-left: 30px;
 }
 
-.abcd .Lista_abcd li a{
+.abcd .Lista_abcd li a {
     color: #000;
     font-size: 22px;
     font-weight: bold;
     font-style: italic;
 }
 
-.abcd .Lista_abcd li a:hover{
+.abcd .Lista_abcd li a:hover {
     font-size: 25px;
     color: rgb(248, 234, 107);
     cursor: pointer;
 }
 
 
-.espaciado{
-    height: 300px;
+.espaciado {
+    height: 150px;
 }
 
 
@@ -587,60 +591,61 @@ textarea{
 /* FOOTER */
 
 
-footer{
-    background-color:rgb(224,194,205, 0.7);
-    color:rgb(191,129,158);
-    font-style: italic;   
+footer {
+    background-color: rgb(224, 194, 205, 0.7);
+    color: rgb(191, 129, 158);
+    font-style: italic;
     width: 100%;
     top: 150%;
     left: 50%;
-    margin:40px auto;
+    margin: 40px auto;
     position: absolute;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding: 35px 20px;
 }
 
-footer div{
-  text-align: center;
+footer div {
+    text-align: center;
 }
 
-.grado{
-    font-size: 30px ;
+.grado {
+    font-size: 30px;
     font-weight: bold;
 }
-.contenedor_Listado{
- margin-left: 50px;  
+
+.contenedor_Listado {
+    margin-left: 50px;
 }
 
-.list_{
+.list_ {
     list-style: none;
 }
 
 
 
-.contenedor_Listado div a{
+.contenedor_Listado div a {
     color: rgb(40, 52, 105);
 }
 
-.contenedor_Listado div a:hover{
+.contenedor_Listado div a:hover {
     color: rgb(173, 107, 248);
 }
 
-.list_ >li{
+.list_>li {
     float: left;
     text-align: left;
 }
 
-.list_>li>ul{
+.list_>li>ul {
     display: none;
-  }
+}
 
-  .list_>li:hover>ul{
-      display: block;
-  }
+.list_>li:hover>ul {
+    display: block;
+}
 
-.list_ li> a{
+.list_ li>a {
     padding: 10px;
     display: block;
     text-decoration: none;
@@ -653,29 +658,51 @@ footer div{
 
 /* ALFABETICO */
 
-.contenedor_Listado1{
-    margin-left: 50px; 
-    column-count:2;
+.contenedor_Listado1 {
+    margin-left: 50px;
+    column-count: 2;
     column-gap: 3em;
     column-rule: 1px solid #bbb;
     column-width: 140px;
 }
 
-.contenedor_Listado1 div a{
+.contenedor_Listado1 div a {
     color: rgb(40, 52, 105);
 }
 
-.contenedor_Listado1 div a:hover{
+.contenedor_Listado1 div a:hover {
     color: rgb(173, 107, 248);
 }
 
 
-h2 >.letra{
+h2>.letra {
     color: #3498db;
     font-size: 30px;
 }
 
-h2 >.letra:hover{
+h2>.letra:hover {
     font-size: 35px;
     color: rgb(40, 52, 105);
 }
+
+
+.contenedor_filtro {
+    width: 50%;
+    margin: auto;
+   
+}
+
+.contenedor_filtro form{
+   background: fixed;
+    position: relative;
+    bottom: 20px;
+   
+}
+.tableDetalle{
+    width: 50%;
+    margin:auto;
+    border: 1px solid black;
+    text-align: justify;
+}
+
+

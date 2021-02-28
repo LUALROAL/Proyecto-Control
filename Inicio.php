@@ -38,11 +38,11 @@ session_start();
 		</nav>
             <nav class="encabezado">
                 <ul class="lista">
-                    <li><a href="index.html" class="select">INICIO</a></li>
+                    <li><a href="Inicio.php">INICIO</a></li>
                     <li><a href="autorizacion.php">AUTORIZACIÓN</a></li>
                     <li><a href="control.php">CONTROL</a></li>
-                    <li><a href="informacion.php">INFORMACIÓN</a></li>
-                    <li><a href="contacto.php">CONTACTO</a></li>
+                    <!-- <li><a href="informacion.php">INFORMACIÓN</a></li>
+                    <li><a href="contacto.php">CONTACTO</a></li> -->
                 </ul>
             </nav>
         </header>

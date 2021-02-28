@@ -8,6 +8,7 @@ class EstudianteModel
     public $Grupo;
     public $Tipo;
     public $Autorizado;
+    public $Descripcion;
 }
 
 class ControlModel
@@ -16,7 +17,7 @@ class ControlModel
     public $id;
     public $EstudianteId;
     public $Fecha;
-    public $Observacion;
+    
 }
   
 ?>

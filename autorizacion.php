@@ -25,8 +25,8 @@
                     <li><a href="inicio.php">INICIO</a></li>
                     <li><a href="autorizacion.php" class="select">AUTORIZACIÓN</a></li>
                     <li><a href="control.php">CONTROL</a></li>
-                    <li><a href="informacion.php">INFORMACIÓN</a></li>
-                    <li><a href="contacto.php">CONTACTO</a></li>
+                    <!-- <li><a href="informacion.php">INFORMACIÓN</a></li>
+                    <li><a href="contacto.php">CONTACTO</a></li> -->
                 </ul>
             </nav>
         </header>
@@ -34,7 +34,7 @@
 
         <section class="container">
             <div class="container2">
-                <a href="gruposAlumnos.php?OrderBy=Grupo"><input type="submit" value="GRUPOS"></a>
+                <a href="Estudiantes.php?OrderBy=Grupo"><input type="submit" value="GRUPOS"></a>
 
                 <a href="Estudiantes.php?OrderBy=Alfabetico"><input type="submit" value="ORDEN ALFABÉTICO"></a>
 

@@ -16,7 +16,8 @@ CREATE TABLE Estudiantes (
     Nombre VARCHAR(50) NOT NULL,
     Grupo VARCHAR(10) NOT NULL,
     Tipo VARCHAR(2) NOT NULL,
-    Autorizado boolean NOT NULL
+    Autorizado boolean NOT NULL,
+    Descripcion VARCHAR(1500) NOT NULL
     
     
 );
@@ -25,8 +26,8 @@ CREATE TABLE Estudiantes (
 CREATE TABLE ControlAcceso (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     idEstudiante int NOT NULL,
-    Fecha TIMESTAMP NOT NULL,
-    Descripcion VARCHAR(1500) NOT NULL
+    Fecha TIMESTAMP NOT NULL
+    
     
     
     
